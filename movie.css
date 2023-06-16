@@ -304,6 +304,26 @@
 	transition: 0.35s ease-in-out;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
 }
+/* Preloader */
+
+.preloader {
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+	transition: all;
+	position: fixed;
+}
+
+.hide-preloader{
+    z-index: -999;
+    visibility: hidden;
+}
 
 /* latest trailers */
 #trailpaper {
@@ -374,7 +394,6 @@
 
 /* free to watch */
 #Free p {
-	color: #08124d;
 	font-size: large;
 	text-align: left;
 	margin-left: 20px;
@@ -386,11 +405,12 @@
 	margin-top: 60px;
 	box-sizing: border-box;
 	margin-bottom: 40px;
+	display: flex;
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 0.7em;
 }
-/* trying the popup */
-/* #popup {
-    display: none;
-} */
+
 
 /* FOOTER */
 #footer {
