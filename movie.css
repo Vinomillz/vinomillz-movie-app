@@ -1,7 +1,6 @@
 * {
 	margin: 0;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-family: "Courier New", Courier, monospace;
 	box-sizing: border-box;
 	z-index: 1;
 }
@@ -220,18 +219,34 @@
 }
 
 #trending {
+	background-image: url(images/wallpaper/zzzzzzzz.svg);
 	margin-bottom: 60px;
 	color: #020a36;
 	position: relative;
+	background-color: #fff;
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	overflow: auto;
+	padding-bottom: 0.7em;
+	scroll-snap-type: x mandatory;
 }
-
+#trend {
+	margin-top: 60px;
+	color: #08124d;
+	font-size: large;
+	text-align: left;
+	margin-left: 20px;
+	font-weight: bolder;
+}
 .column {
 	display: flex;
 	/* z-index: 0.9; */
 	width: 100%;
 	overflow: auto;
 	padding-bottom: 0.7em;
-	position: relative;
+	/* position: ; */
+	scroll-snap-type: x mandatory;
 }
 
 .scroll {
@@ -268,18 +283,6 @@
 .scroll:hover .overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 1;
-}
-
-#trending .column {
-	background-image: url(images/wallpaper/zzzzzzzz.svg);
-}
-
-#trending p {
-	color: #08124d;
-	font-size: large;
-	text-align: left;
-	margin-left: 20px;
-	font-weight: bolder;
 }
 
 #playbtn {
@@ -320,9 +323,9 @@
 	position: fixed;
 }
 
-.hide-preloader{
-    z-index: -999;
-    visibility: hidden;
+.hide-preloader {
+	z-index: -999;
+	visibility: hidden;
 }
 
 /* latest trailers */
@@ -410,7 +413,6 @@
 	overflow: auto;
 	padding-bottom: 0.7em;
 }
-
 
 /* FOOTER */
 #footer {
