@@ -62,7 +62,7 @@ function showMovies(data) {
 
 const TrendingMovies = [
 	{
-		id: 1,
+		id: 0,
 		name: "Extraction 2",
 		trailer: "https://www.themoviedb.org/video/play?key=mi4pEsYeljk",
 		download:
@@ -72,7 +72,7 @@ const TrendingMovies = [
 		text: "(2023)",
 	},
 	{
-		id: 2,
+		id: 1,
 		name: "Fast X",
 		trailer: "https://www.themoviedb.org/video/play?key=32RAq6JzY-w",
 		download:
@@ -82,7 +82,7 @@ const TrendingMovies = [
 		text: "(2023)",
 	},
 	{
-		id: 3,
+		id: 2,
 		name: "Dungeons & dragons",
 		trailer: "https://www.themoviedb.org/video/play?key=MHXWY_gPzMw",
 		download:
@@ -92,7 +92,7 @@ const TrendingMovies = [
 		text: "Honor Among Thieves",
 	},
 	{
-		id: 4,
+		id: 3,
 		name: "The pope's Exorcist",
 		trailer: "https://www.themoviedb.org/video/play?key=Eq1hj7MoJio",
 		download:
@@ -102,7 +102,7 @@ const TrendingMovies = [
 		text: "Horror, mystery.. (2023)",
 	},
 	{
-		id: 5,
+		id: 4,
 		name: "Ant Man & Wasp",
 		trailer: "https://www.themoviedb.org/video/play?key=ZlNFpri-Y40",
 		download:
@@ -112,7 +112,7 @@ const TrendingMovies = [
 		text: "Quantumania (2023)",
 	},
 	{
-		id: 6,
+		id: 5,
 		name: "Shazam 2 ",
 		trailer: "https://www.themoviedb.org/video/play?key=S3L32B4T5Mo",
 		download:
@@ -122,7 +122,7 @@ const TrendingMovies = [
 		text: "Fury Of The Gods",
 	},
 	{
-		id: 7,
+		id: 6,
 		name: "Avatar ",
 		trailer: "https://www.themoviedb.org/video/play?key=a8Gx8wiNbs8",
 		download:
@@ -132,7 +132,7 @@ const TrendingMovies = [
 		text: "The Way Of Water",
 	},
 	{
-		id: 8,
+		id: 7,
 		name: "Creed III ",
 		trailer:
 			"https://movie-app-dusky-eight.vercel.app/movie/677179-creed-iii/watch",
@@ -143,7 +143,7 @@ const TrendingMovies = [
 		text: "",
 	},
 	{
-		id: 9,
+		id: 8,
 		name: "Gangs Of Lagos",
 		trailer: "https://www.themoviedb.org/video/play?key=TBLNplnMVzA",
 		download:
@@ -153,7 +153,7 @@ const TrendingMovies = [
 		text: "April 7th 2023",
 	},
 	{
-		id: 10,
+		id: 9,
 		name: "Everything",
 		trailer: "https://www.themoviedb.org/video/play?key=wxN1T1uxQ2g",
 		download:
@@ -163,7 +163,7 @@ const TrendingMovies = [
 		text: "Everywhere All ...",
 	},
 	{
-		id: 11,
+		id: 10,
 		name: "Luther (2023)",
 		trailer: "https://www.themoviedb.org/video/play?key=EGK5qtXuc1Q",
 		download:
@@ -173,7 +173,7 @@ const TrendingMovies = [
 		text: "The fallen sun",
 	},
 	{
-		id: 12,
+		id: 11,
 		name: "Batman (2023)",
 		trailer: "https://www.themoviedb.org/video/play?key=5OzP3grTnz8",
 		download:
@@ -183,7 +183,7 @@ const TrendingMovies = [
 		text: "The Doom",
 	},
 	{
-		id: 13,
+		id: 12,
 		name: "Die Hart (2023)",
 		trailer: "https://www.youtube.com/watch?v=KdIZy26RcJk",
 		download:
@@ -193,7 +193,7 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 	{
-		id: 14,
+		id: 13,
 		name: "Black Panther",
 		trailer: "https://www.youtube.com/watch?v=_Z3QKkl1WyM",
 		download:
@@ -203,7 +203,7 @@ const TrendingMovies = [
 		text: "Wakanda Forever",
 	},
 	{
-		id: 15,
+		id: 14,
 		name: "Plane",
 		trailer: "https://www.youtube.com/watch?v=7-6_Ulo7mdk",
 		download:
@@ -213,7 +213,7 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 	{
-		id: 16,
+		id: 15,
 		name: "Legion",
 		trailer: "https://www.youtube.com/watch?v=DKNjOwuBDbo",
 		download:
@@ -223,7 +223,7 @@ const TrendingMovies = [
 		text: "Of SuperHeroes",
 	},
 	{
-		id: 17,
+		id: 16,
 		name: "Black Adam",
 		trailer: "https://www.youtube.com/watch?v=X0tOpBuYasI",
 		download:
@@ -233,7 +233,7 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 	{
-		id: 18,
+		id: 17,
 		name: "Puss in Boots",
 		trailer: "https://www.youtube.com/watch?v=RqrXhwS33yc",
 		download:
@@ -243,7 +243,7 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 	{
-		id: 19,
+		id: 18,
 		name: "Devotion",
 		trailer: "https://www.youtube.com/watch?v=NCDEGP6VjYY",
 		download:
@@ -253,7 +253,7 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 	{
-		id: 20,
+		id: 19,
 		name: "Violent Night",
 		trailer: "https://www.youtube.com/watch?v=a53e4HHnx_s",
 		download:
@@ -263,7 +263,7 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 	{
-		id: 21,
+		id: 20,
 		name: "Sonic ",
 		trailer: "https://www.youtube.com/watch?v=G5kzUpWAusI",
 		download:
@@ -273,7 +273,7 @@ const TrendingMovies = [
 		text: "The Hedgehog 2",
 	},
 	{
-		id: 22,
+		id: 21,
 		name: "The Next",
 		trailer: "https://www.themoviedb.org/video/play?key=lJ5CRBeaKxk",
 		download:
@@ -283,7 +283,7 @@ const TrendingMovies = [
 		text: "365 Days",
 	},
 	{
-		id: 23,
+		id: 22,
 		name: "Infintiy Pool",
 		trailer: "https://www.themoviedb.org/video/play?key=PVnIMvVEkrA",
 		download:
@@ -293,7 +293,7 @@ const TrendingMovies = [
 		text: "Horror",
 	},
 	{
-		id: 24,
+		id: 23,
 		name: "Sex Appeal",
 		trailer: "https://www.themoviedb.org/video/play?key=A207HN4bRJM",
 		download:
@@ -303,19 +303,39 @@ const TrendingMovies = [
 		text: "Official Movie",
 	},
 ];
+function closeux() {
+	popupBoxx.style.display = "none";
+}
+
+// the idea is to call a funtion which calls the popup function taking a variable of the youtube url link then using the link in the popup hence for each popup function call they use different variables i.e links ...
+
+function ppp(item) {
+	popupBoxx.style.display = "flex";
+	popupBoxx.innerHTML = `<div  id="popupBox">
+				<div id="vgdesign">
+				<p class="barr" onclick="closeux()">+</p>
+				<br />
+				<span> <iframe src=${TrendingMovies[item].trailer} frameborder="0"></iframe></span>
+			</div>	
+				</div>`;
+	console.log(TrendingMovies[0].trailer);
+}
+
+console.log(TrendingMovies[0].trailer);
+
 
 window.addEventListener("DOMContentLoaded", function () {
 	console.log("has the site loaded completed for trending");
 	let displaytrend = TrendingMovies.map(function (item) {
 		// console.log(item)
 		return `<div class="scroll">
+		
 					
-					<a
-						href= ${item.trailer}
-						target="_blank"
-					>
-						<img  src=${item.img} alt=${item.alt} onclick="youTubePopup()" />
-					</a>
+					<button class="popupWork" onclick= ppp(${item.id})>
+					<img  src=${item.img} alt=${item.alt} />
+					</button>
+
+					
 					<h3>${item.name}</h3>
 					<span>${item.text}</span>
 					<br />
@@ -335,6 +355,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	trending = document.getElementById("trending");
 	trending.innerHTML = displaytrend;
 });
+
 // creating local data for free to watch
 
 const FreeToWatch = [
@@ -483,7 +504,4 @@ window.addEventListener("DOMContentLoaded", function () {
 	free.innerHTML = displayFree;
 });
 
-function youTubePopup() {
-	console.log("This is the youtube popup");
-	console.log(trailer);
-}
+
