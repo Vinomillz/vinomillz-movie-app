@@ -305,6 +305,9 @@ const TrendingMovies = [
 ];
 function closeux() {
 	popupBoxx.style.display = "none";
+	popupBoxx.innerHTML = "";
+
+	console.log("close popup was clicked");
 }
 
 // the idea is to call a funtion which calls the popup function taking a variable of the youtube url link then using the link in the popup hence for each popup function call they use different variables i.e links ...
@@ -315,14 +318,13 @@ function ppp(item) {
 				<div id="vgdesign">
 				<p class="barr" onclick="closeux()">+</p>
 				<br />
-				<span> <iframe src=${TrendingMovies[item].trailer} frameborder="0"></iframe></span>
+				<span> <iframe src=${TrendingMovies[item].trailer} frameborder="0"</iframe></span>
 			</div>	
 				</div>`;
 	console.log(TrendingMovies[0].trailer);
 }
 
 console.log(TrendingMovies[0].trailer);
-
 
 window.addEventListener("DOMContentLoaded", function () {
 	console.log("has the site loaded completed for trending");
@@ -355,6 +357,130 @@ window.addEventListener("DOMContentLoaded", function () {
 	trending = document.getElementById("trending");
 	trending.innerHTML = displaytrend;
 });
+
+// creating free data for whats popular 
+const WhatsPopular = [
+	{
+		id: 1,
+		name: "Fifty Shades Freed",
+		trailer: "https://www.youtube.com/watch?v=nJCc5HRPxYA",
+		download: "/videos/movies/6489-fifty-shades-freed-2018-webrip",
+		img: "images/fiftyShadesFreed.jpg",
+		alt: "fifty Shades Freed",
+		text: "Jan 17, 2018",
+	},
+	{
+		id: 2,
+		name: "Shazam!",
+		trailer: " https://www.themoviedb.org/video/play?key=go6GEIrcvFY",
+		download:
+			"https://www.sabishare.com/file/VaHCdsuMf23-shazam-2019-hc-hdrip-netnaija-com-mp4",
+		img: "images/shazam.jpg",
+		alt: "Shazam",
+		text: "(2019)",
+	},
+	{
+		id: 3,
+		name: "Dark October",
+		trailer: " https://www.youtube.com/watch?v=XU4C2X8NKog",
+		download: "https://loadedfiles.com/818cb65211183b44",
+		img: "images/darkOctober.jpg",
+		alt: "Dark october",
+		text: "Official Movie",
+	},
+	{
+		id: 4,
+		name: "365 Days",
+		trailer: "  https://www.themoviedb.org/video/play?key=J79D3hny-e8",
+		download:
+			"https://www.sabishare.com/file/bldxxZxny50-365-days-2020-netnaija-com-mp4",
+		img: "images/365Days.jpg",
+		alt: "365 Days",
+		text: "2020",
+	},
+	{
+		id: 5,
+		name: "Brotherhood",
+		trailer: "https://www.youtube.com/watch?v=42HhowRmTSE",
+		download:
+			"https://www.sabishare.com/file/USFIbCNeT28-brotherhood-2022-netnaija-com-mkv",
+		img: "images/brotherhood-min.jpg",
+		alt: "Brotherhood",
+		text: "2022",
+	},
+	{
+		id: 6,
+		name: "The Menu",
+		trailer: "https://www.themoviedb.org/video/play?key=CAWZMssP3gM",
+		download:
+			"https://www.sabishare.com/file/VpPhlKQZp19-the-menu-2022-netnaija-com-mkv",
+		img: "images/theMenu.jpg",
+		alt: "The menu",
+		text: "Horror,Thriller (2022)",
+	},
+	{
+		id: 7,
+		name: "Glass Onion",
+		trailer: " https://www.themoviedb.org/video/play?key=ieEF6Mm4Y0w",
+		download:
+			"https://downloadwella.com/qe1pwi8ijsox/Glass.Onion.A.Knives.Out.Mystery.(NKIRI.COM).2022.NF.WEBRip.DOWNLOADED.FROM.NKIRI.COM.mkv.html",
+		img: "images/glassOnion.jpg",
+		alt: "Glass Onion",
+		text: "A Knives ...(2022)",
+	},
+	{
+		id: 8,
+		name: "Emancipation",
+		trailer: " https://www.themoviedb.org/video/play?key=hGoNxmTDsJs",
+		download:
+			"https://www.sabishare.com/file/PaimSGoMl50-emancipation-2022-netnaija-com-mkv",
+		img: "images/emancipAtion.jpg",
+		alt: "Emancipation",
+		text: "(2022)",
+	},
+	{
+		id: 9,
+		name: "Slumberland",
+		trailer: " https://www.themoviedb.org/video/play?key=06SZPlPcYx0",
+		download:
+			"https://www.sabishare.com/file/soRAscLrB94-slumberland-2022-netnaija-com-mkv",
+		img: "images/slumberland.jpg",
+		alt: "Slumberland",
+		text: "(2022)",
+	},
+];
+
+window.addEventListener('DOMContentLoaded', function(){
+	console.log("whats_popular has loaded finished" );
+	let whats_popular = WhatsPopular.map(function (item){
+		// console.log(item)
+		return `<div class="scroll">
+		<a href=${item.trailer}
+		target="_blank">
+		
+		<img src=${item.img} alt=${item.alt} onclick="youTubePopup()" />
+		</a>
+		<h3> ${item.name} </h3>
+		<span> ${item.text} </span>
+		<br />
+		<a href ="${item.download}"
+		target="_blank"
+		>
+		<button class="button" type="submit"> Download </button>
+		</a>
+		<div class="overlay">
+						<i id="playbtn" class="fa-solid fa-play"><p>Trailer</p></i>
+					</div>
+				</div>
+		`;
+	}) 
+	whats_popular = whats_popular.join("");
+	// console.log(displayFree);
+	popular = document.getElementById("whats_popularx");
+	popular.innerHTML = whats_popular;
+
+})
+
 
 // creating local data for free to watch
 
@@ -503,5 +629,3 @@ window.addEventListener("DOMContentLoaded", function () {
 	free = document.getElementById("Free");
 	free.innerHTML = displayFree;
 });
-
-
